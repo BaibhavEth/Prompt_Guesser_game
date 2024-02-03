@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replit</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.cdnfonts.com/css/helios-antique" rel="stylesheet">
+</head>
+<body style="background-color:#F5646E;padding: 0px;">
+    <div class="content-box">
+        <h1>Guess the prompt game</h1>
+        <!-- ... rest of your HTML ... -->
+<form id="generateForm" action="/generate" method="post">
+  <div id="promptInputContainer">
+      <input type="text" name="prompt" placeholder="Dog making pizza" class="input-prompt" required>
+      <button type="submit" class="btn-generate">Generate</button>
+  </div>
+  <img id="openaiImage" src="andrew.png" alt="OpenAI Generated Image" class="superman-gen">
+  <!-- Initially hidden name input and submit button -->
+  <div id="nameInputContainer" style="display: none;">
+      <input type="text" id="nameInput" name="name" placeholder="Enter your name" class="input-prompt">
+      <button type="submit" class="btn-generate">Submit Name</button>
+  </div>
+</form>
+<!-- ... rest of your HTML ... -->
+
+    </div>
+
+    <script>
+        function showGeneratingAlert() {
+            Swal.fire({
+                title: 'Generating Image...',
+                text: 'Please wait while the image is being generated.',
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                willOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+        }
+
+        document.getElementById('generateForm').addEventListener('submit', showGeneratingAlert);
+    </script>
+</body>
+</html>

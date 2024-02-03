@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Generate Images with DALLE v2 by simply putting your openai api key into secrets, and you're all good to go!  Read more at https://beta.openai.com/docs/guides/images/usage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "app.json": "^0.12.1",
+    "axios": "^1.5.0",
+    "firebase-admin": "^12.0.0",
+    "http": "^0.0.1-security",
+    "node-fetch": "^3.2.6",
+    "openai": "^4.26.0",
+    "pg": "^8.11.3"
+  },
+  "type": "module"
+}

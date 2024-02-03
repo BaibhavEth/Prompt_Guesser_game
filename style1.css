@@ -1,0 +1,140 @@
+/* Include the Helios Antique font */
+@import url('https://fonts.cdnfonts.com/css/helios-antique');
+
+/* Reset default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color for the body */
+body {
+  background-color: #F5646E;
+  font-family: 'Helios Antique', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style the content box */
+.content-box {
+  background-color: white;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* Adjust this value as needed */
+  margin-bottom: 50px; 
+}
+
+/* Style the header */
+.content-box h1 {
+  font-size: 5vh;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the image */
+.superman {
+  width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Style the paragraph */
+.content-box p {
+  font-size: 1.75vh;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.oval-button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 25px;
+  color: black;
+  font-family: 'Helios Antique', sans-serif;
+  font-size: 1.5vh; /* You might need to reduce this if the text is still overflowing */
+  padding: 10px 20px; /* Adjust the padding to fit the text */
+  margin-bottom: 10px;
+  width: calc(100% - 40px); /* Adjust the width to ensure it fits within the parent element */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Make the button block level so it fills the container */
+  text-align: center; /* Center the text within the button */
+  box-sizing: border-box; /* Include padding and border in the button's width */
+  white-space: nowrap; /* Prevent text from wrapping */
+  flex-shrink: 0; /* Prevent the button from shrinking */
+}
+
+
+/* Style the special 'Make your own prompt' button */
+form button.oval-button {
+  background-color: #C4DE46;
+}
+
+/* Add hover effect for buttons */
+.oval-button:hover {
+  background-color: #e2e2e2; /* Change as needed */
+}
+
+/* Additional CSS to style the form at the bottom */
+.form-bottom {
+  text-align: center;
+   /* Adjust this value as needed to position the form */
+}
+
+.special-button {
+  background-color: #C4DE46; /* The distinct green color */
+  background-color: #C4DE46; /* The green color */
+  margin-top: 10px; /* Space from the last option */
+  margin-bottom: 0; /* Remove bottom margin if needed */
+  width: 100%;
+  /* Other styles specific to this button can go here */
+}
+
+
+.input-container {
+  display: flex; /* This will place the input and button in a row */
+  justify-content: space-between; /* This will add space between the input and the button */
+  align-items: center; /* This will vertically align the input and button */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Centering it */
+  padding: 0 20px; /* Padding to not stick to the edges */
+}
+
+.input-prompt {
+  flex-grow: 1; /* The input will grow to fill the space */
+  margin-right: 10px; /* Add some space between the input and the button */
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 2vh;
+}
+/* Rest of your CSS */
+.btn-generate {
+  background-color: #C4DE46; /* The green color */
+  color: black; /* Text color */
+  width: auto; /* Auto width based on content */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: 2px solid black;
+  /* Your existing styles for the button */
+}
+
+.superman-gen {
+  max-width: 100%; /* Ensure the image is no wider than its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  border-radius: 10px; /* Assuming you want rounded corners */
+  display: block; /* Images are inline by default, which can cause issues with alignment */
+  margin: 0 auto; /* Center the image within its container */
+}
+
+
